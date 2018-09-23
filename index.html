@@ -3,48 +3,107 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>rnw - Energías Renovables (Sistemas fotovoltaicos y postes solares)</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-
-
+    <title>rnw - energías renovables</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-    <section class="hero is-primary is-medium">
-        <div class="hero-head">
-            <header class="nav>">
-                <div class="container">
-                    <div class="nav-left">
-                        <a href="#" class="nav-item">
-                            <img src="http://rnw.mx/assets/img/reneworks-logo.svg" alt="logo rnw" class="logo">
-                        </a>
-                    </div>
-                    <div class="nav-right nav-menu">
-                        <a href="#" target="_self" class="nav-item">inicio</a>
-                        <a href="#" target="_self" class="nav-item">productos</a>
-                        <a href="#" target="_self" class="nav-item">servicios</a>
-                        <a href="#" target="_self" class="nav-item">contacto</a>
-                        <span class="icon">
-                            <a href="#" target="_self" class="button is-primary is inverted"><i class="fab fa-github"></i></a>
-                        </span>
-                        <span class="icon">
-                            <a href="#" target="_self" class="button is-primary is inverted"><i class="fab fa-facebook"></i></a>
-                        </span>
-                        <span class="icon">
-                            <a href="#" target="_self" class="button is-primary is inverted"><i class="fab fa-twitter"></i></a>
-                        </span>
-                        <span class="icon">
-                            <a href="#" target="_self" class="button is-primary is inverted"><i class="fab fa-youtube"></i></a>
+<body class="margen">
+    <div class="hero-body is-light">
+        <nav class="navbar is-fixed-top">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img class="navbar-brand logo" src="https://rnw.mx/assets/img/reneworks-logo.svg" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu lftpad">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+
+                        <a class="navbar-item" href="#">inicio</a>
+                        <a class="navbar-item" href="#">productos</a>
+                        <a class="navbar-item" href="#">servicios</a>
+                        <a class="navbar-item" href="#">nosotros</a>
+                        <a class="navbar-item" href="#">contactos</a>
+
+                        <span class="navbar-item">
+                            <a class="is-white is-outlined" href="#">
+                                <span class="button is-info">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                                <span title="Github"></span>
+                            </a>
                         </span>
                     </div>
                 </div>
-            </header>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="slider">
+            <input type="radio" name="slide_switch" id="id1" />
+            <label for="id1">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Postes Solares</h1>
+            </label>
+            <img src="img/test.jpg" width="100%" />
+
+            <!--Lets show the second image by default on page load-->
+            <input type="radio" name="slide_switch" id="id2" checked="checked" />
+            <label for="id2">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Paneles Solares</h1>
+            </label>
+            <img src="img/test.jpg" width="100%" />
+
+            <input type="radio" name="slide_switch" id="id3" />
+            <label for="id3">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Luminarias LED</h1>
+            </label>
+            <img src="img/test.jpg" width="100%" />
+
+            <input type="radio" name="slide_switch" id="id4" />
+            <label for="id4">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Baterías</h1>
+            </label>
+            <img src="img/test.jpg" width="100%" />
+
+            <input type="radio" name="slide_switch" id="id5" />
+            <label for="id5">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Power Walls</h1>
+            </label>
+            <img src="img/test.jpg" width="100%" />
+            
+             <input type="radio" name="slide_switch" id="id5" />
+            <label for="id5">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Power Banks</h1>
+            </label>
+            <img src="img/test.jpg" width="100%"/>
+            
+             <input type="radio" name="slide_switch" id="id5" />
+            <label for="id5">
+                <img src="rnw-logo-solo.png" width="100" />
+                <h1>Lighting Packs</h1>
+            </label>
+            <img src="img/test.jpg" width="100%"/>
         </div>
     </section>
 </body>
 <script src="script/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
 </html>
