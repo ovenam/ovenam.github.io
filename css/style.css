@@ -1,76 +1,126 @@
 .logo {
     height: 70px;
     width: auto;
-    padding-left: 8%;
+    padding-left: 5px;
     position: absolute;
     padding-top: 5px;
 }
 
-.lftpad
-{
-    padding-right: 6.5%;
+.lftpad {
+    padding-right: 5px;
 }
 
-/*Time for the CSS*/
-* {margin: 0; padding: 0;}
-
-.slider{
-	width: 85%; /*Same as width of the large image*/
-	position: relative;
-	/*Instead of height we will use padding*/
-	padding-top: 23%; /*That helps bring the labels down*/
-	margin: 5px auto;
-	
-	/*Lets add a shadow*/
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+* {
+    box-sizing: content-box;
 }
 
-
-/*Last thing remaining is to add transitions*/
-.slider>img{
-	position: absolute;
-	left: 0; top: 0;
-	transition: all 0.5s;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
 }
 
-.slider input[name='slide_switch'] {
-	display: none;
-}
-
-.slider label {
-	/*Lets add some spacing for the thumbnails*/
-	margin: 13px 0 0 13px;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
-	padding: 5px;
-	float: left;
-	cursor: pointer;
-	transition: all 0.65s;
-	
-	/*Default style = low opacity*/
-	opacity: 0.75;
-}
-
-.slider label img{
-	display: block;
-}
-
-/*Time to add the click effects*/
-.slider input[name='slide_switch']:checked+label {
+/* Hide the images by default */
+.mySlides {
+    display: none;
 
 }
-/*Clicking any thumbnail now should change its opacity(style)*/
-/*Time to work on the main images*/
-.slider input[name='slide_switch'] ~ img {
-	opacity: 0;
-	transform: scale(0.5);
-}
-/*That hides all main images at a 110% size
-On click the images will be displayed at normal size to complete the effect
-*/
-.slider input[name='slide_switch']:checked+label+img {
-	opacity: 1;
-	transform: translateX(0px);
-}
-/*Clicking on any thumbnail now should activate the image related to it*/
 
-/*We are done :)*/
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 3vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: white;
+    text-shadow: -5px 2px 5px rgba(0,0,0,0.99);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.99);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 140px;
+    width: 140px;
+    margin: 20px;
+    background-color: gray;
+    display: inline-block;
+    transition: background-color 2s ease;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.99);
+
+}
+
+.active,
+.dot:hover {
+    background-color: rgba(30,34,40,1);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}

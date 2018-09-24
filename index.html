@@ -37,12 +37,37 @@
                         <a class="navbar-item" href="#">contactos</a>
 
                         <span class="navbar-item">
-                            <a class="is-white is-outlined" href="#">
-                                <span class="button is-info">
+                            <a href="#">
+                                <span class="title is-3has-text-dark">
                                     <i class="fa fa-github"></i>
                                 </span>
-                                <span title="Github"></span>
+                                <span title="github"></span>
                             </a>
+                        </span>
+                        <span class="navbar-item">
+                            <a href="#">
+                                <span class="title is-3has-text-dark">
+                                    <i class="fa fa-youtube"></i>
+                                </span>
+                                <span title="youtube"></span>
+                            </a>
+                        </span>
+                        <span class="navbar-item">
+                            <a class="is-white is-outlined" href="#">
+                                <span class="title is-3has-text-dark">
+                                    <i class="fa fa-twitter"></i>
+                                </span>
+                                <span title="twitter"></span>
+                            </a>
+                        </span>
+                        <span class="navbar-item">
+                            <a class="is-white is-outlined" href="#">
+                                <span class="title is-3has-text-dark">
+                                    <i class="fa fa-whatsapp"></i>
+                                </span>
+                                <span title="whatsapp"></span>
+                            </a>
+                            <h5 class="navbar-item subtitle is-5">(442) 9620668</h5>
                         </span>
                     </div>
                 </div>
@@ -50,60 +75,71 @@
         </nav>
     </div>
     <section>
-        <div class="slider">
-            <input type="radio" name="slide_switch" id="id1" />
-            <label for="id1">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Postes Solares</h1>
-            </label>
-            <img src="img/test.jpg" width="100%" />
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-            <!--Lets show the second image by default on page load-->
-            <input type="radio" name="slide_switch" id="id2" checked="checked" />
-            <label for="id2">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Paneles Solares</h1>
-            </label>
-            <img src="img/test.jpg" width="100%" />
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/paneles-solares.jpg" width="100%">
+                <div class="text">
+                    <h1 class="title is-1 has-text-light">Paneles solares</h1>
+                </div>
+            </div>
 
-            <input type="radio" name="slide_switch" id="id3" />
-            <label for="id3">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Luminarias LED</h1>
-            </label>
-            <img src="img/test.jpg" width="100%" />
 
-            <input type="radio" name="slide_switch" id="id4" />
-            <label for="id4">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Baterías</h1>
-            </label>
-            <img src="img/test.jpg" width="100%" />
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/paneles-solares.jpg" width="100%">
+                <div class="text">
+                    <h1 class="title is-1 has-text-light">Paneles solares</h1>
+                </div>
+            </div>
 
-            <input type="radio" name="slide_switch" id="id5" />
-            <label for="id5">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Power Walls</h1>
-            </label>
-            <img src="img/test.jpg" width="100%" />
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/luminarias-led.jpg" width="100%">
+                <div class="text">
+                    <h1 class="title is-1 has-text-light">Luminarias LED</h1>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/luminarias-led.jpg" width="100%">
+                <div class="text">
+                    <h1 class="title is-1 has-text-light">Luminarias LED</h1>
+                </div>
+            </div>
             
-             <input type="radio" name="slide_switch" id="id5" />
-            <label for="id5">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Power Banks</h1>
-            </label>
-            <img src="img/test.jpg" width="100%"/>
-            
-             <input type="radio" name="slide_switch" id="id5" />
-            <label for="id5">
-                <img src="rnw-logo-solo.png" width="100" />
-                <h1>Lighting Packs</h1>
-            </label>
-            <img src="img/test.jpg" width="100%"/>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/luminarias-led.jpg" width="100%">
+                <div class="text">
+                    <h1 class="title is-1 has-text-light">Luminarias LED</h1>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"><img src="https://png.icons8.com/ios-glyphs/90/ffffff/--street-lamp.png"><h3 class="title is-6 has-text-light">Postes Solares</h3></span>
+            <span class="dot" onclick="currentSlide(2)"><img src="https://png.icons8.com/ios-glyphs/90/ffffff/--solar-panels.png"><h3 class="title is-6 has-text-light">Paneles Solares</h3></span>
+            <span class="dot" onclick="currentSlide(3)"><img src="https://png.icons8.com/ios-glyphs/90/ffffff/--luminaria-led.png"><h3 class="title is-6 has-text-light">Iluminación LED</h3></span>
+            <span class="dot" onclick="currentSlide(4)"><img src="https://png.icons8.com/ios-glyphs/90/ffffff/--full-battery.png"><h3 class="title is-6 has-text-light">Baterías</h3></span>
+            <span class="dot" onclick="currentSlide(5)"><img src="https://png.icons8.com/windows/90/ffffff/brick-wall.png"><h3 class="title is-6 has-text-light">Power Wall</h3></span>
+            <span class="dot" onclick="currentSlide(5)"><img src="https://png.icons8.com/windows/90/ffffff/shutdown.png"><h3 class="title is-6 has-text-light">Power Bank</h3></span>
+            <span class="dot" onclick="currentSlide(5)"><img src="https://png.icons8.com/ios/90/ffffff/searchlight.png"><h3 class="title is-6 has-text-light">Lighting Pack</h3></span>
+
+        </div>
+
     </section>
 </body>
 <script src="script/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
 </html>
