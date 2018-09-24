@@ -82,13 +82,13 @@
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
-    height: 120px;
-    width: 120px;
-    margin: 10px;
+    height: 125px;
+    width: 125px;
+    margin: 5px;
     background-color: gray;
     display: inline-block;
     transition: background-color 2s ease;
-    font-size: 10px;
+    font-size: 20px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.99);
 
 }
