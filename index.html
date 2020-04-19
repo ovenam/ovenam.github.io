@@ -42,7 +42,9 @@ getJSON('https://api.f2pool.com/ethereum/ovenam',  function(err, data) {
         console.error(err);
     } else {
 
-        var text = `
+        var text =
+
+`
 Saldo en cuenta: ${data.balance} eth </br>
 Hashrate: ${data.hashrate/1000000} MH/s </br>
 Generado el día de hoy: ${data.fixed_balance} eth
