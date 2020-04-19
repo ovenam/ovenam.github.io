@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+<style>
+#valores_principales {
+  font-family:"Open Sans";
+}
+</style>
+</head>
+
+<body>
+    <div id="valores_principales" class="mypanel"></div>
+
+<script>
+
+var getJSON = function(url, callback) {
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+
+    xhr.onload = function() {
+
+        var status = xhr.status;
+
+        if (status == 200) {
+            callback(null, xhr.response);
+        } else {
+            callback(status);
+        }
+    };
+
+    xhr.send();
+};
+
+getJSON('https://api.f2pool.com/ethereum/ovenam',  function(err, data) {
+
+    if (err != null) {
+        console.error(err);
+    } else {
+
+        var text = `
+Saldo en cuenta: ${data.balance} eth </br>
+Hashrate: ${data.hashrate/1000000} MH/s </br>
+Generado el día de hoy: ${data.fixed_balance} eth
+`
+
+        console.log(text);
+    }
+
+$(".mypanel").html(text);
+
+});
+
+</script>
+
+</body>
+</html>
