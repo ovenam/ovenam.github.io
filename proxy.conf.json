@@ -1,0 +1,9 @@
+{"/ethereum/*"":
+
+{
+  "target": "https://api.f2pool.com",
+  "secure": false,
+  "changeOrigin": true
+}
+
+  }
